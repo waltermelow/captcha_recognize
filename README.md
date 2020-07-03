@@ -13,7 +13,21 @@ captcha generator: https://github.com/lepture/captcha
 
 accuracy 52.1% judged by captcha_eval.py, training size 100000, after 200000 steps
 captcha generator: https://github.com/Gregwar/CaptchaBundle
+
  
+Docker usage
+==========
+
+Compilar Docker (Dockerfile)
+```
+docker build -t my-python-app .
+```
+
+Ejecutar consola con entorno python y captcha_recognition instalada
+```
+docker run -it --rm --name my-running-app -v "$PWD":/usr/src/myapp my-python-app /bin/bash
+```
+
 Dependence
 ==========
 ### python 2.7
